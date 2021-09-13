@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../img/reg_bg.jpg");
+}
+header {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    text-align: center;
+    font-size: 31px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+form {
+    margin: 0 30% 0 30%;
+    padding: 100px 30px 30px 30px;
+    display: grid;
+    grid-template-columns: [labels] 200px [controls] 1fr;
+    grid-auto-flow: row;
+    grid-gap: .3em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-weight: bold;
+}
+form > label {
+    grid-column: labels;
+    grid-row: auto;
+}
+form h2 {
+    text-align: center;
+    grid-column: span 2;
+    font-size: 40px;
+    font-weight: bolder;
+}
+form #user-description-label, form #user-description, form #submit, form #add-info, form #sex {
+    grid-column: span 2;
+}
+form #user-description {
+    resize: none;
+}
+form #submit, form #user-description, form select, form input {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+form #submit {
+    font-size: 25px;
+    font-weight: bold;
+    transition: background-color .4s;
+}
+form #submit, form input, form select, form textarea{
+    background: transparent;
+}
+form #submit:hover {
+    background-color: rgba(0, 0, 0, 0.1);;
+}

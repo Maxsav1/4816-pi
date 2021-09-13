@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация на сайте по поиску работы</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header>
+    <h1>Workfinder</h1>
+</header>
+<form action="index.html" method="post">
+    <h2>Регистрация</h2>
+    <label for="full-name">ФИО:</label>
+    <input type="text" name="full-name" id="full-name">
+    <label for="date-of-birth">Дата рождения:</label>
+    <input type="date" name="date-of-birth" id="date-of-birth">
+    <label for="email">Адрес электронной почты:</label>
+    <input type="email" name="email" id="email">
+    <label for="tel">Номер телефона:</label>
+    <input type="tel" name="tel" id="tel">
+    <fieldset id="sex">
+        <legend>Пол</legend>
+        <label><input type="radio" name="sex" value="M">Мужской</label><br>
+        <label><input type="radio" name="sex" value="F">Женский</label><br>
+    </fieldset>
+    <label for="edu">Образование:</label>
+    <select name="edu" id="edu">
+        <option value="se">Среднее образование</option>
+        <option value="ihe">Незаконченное высшее образование</option>
+        <option value="he">Высшее образование</option>
+    </select>
+    <fieldset id="add-info">
+        <legend>Дополнительная информация</legend>
+        <label><input type="checkbox" name="add-info" value="sw">Готовность к вахтовой работе</label><br>
+        <label><input type="checkbox" name="add-info" value="trip">Готовность к длительным командировкам</label><br>
+    </fieldset>
+    <label for="user-description" id="user-description-label">Кратко опишите свои достоинства:</label>
+    <textarea name="add-info" id="user-description" rows="10" cols="70"></textarea>
+    <input type="submit" name="submit" id="submit" value="Зарегистрироваться">
+</form>
+</body>
+</html>
